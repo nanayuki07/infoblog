@@ -16,6 +16,102 @@
       <%= link_to "新規登録", new_user_registration_path,class: "loginlink" %> |
       <%= link_to "ログイン", new_user_session_path, class: "loginlink" %>
     <% end %>
-    <%= yield %>
+    
+
+    <div id="intro">
+  <!-- コンテンツ -->
+      <div class="check">
+        
+        <p><h1>TERM-INAL</h1> </p>
+        <p><a src="taiki.html">TAIKI</a> /<a herf=""> OMICHI </a>/<a hrerf="">TAIHEI </a>/<a herf="">HIKARU</a>/<a herf="">ヒストリー</a>/<a herf="">レッスン曲</a>  /<a herf="">服装</a>
+        </p>
+      </div>
+      <div class="koushin">
+        <h1>出演イベント他</h1>
+
+        <div class="embeded">
+          <%= yield %>
+        </div>
+      </div>
+      
+    </div>
+    <div id="second">
+      <!-- コンテンツ -->
+       <section class="clearfix btn-sec">
+             <div class="text-box">
+                 <button type="" class="btn add-btn">
+                 トレーニングメニュー
+                 </button>
+                 <li class="text1 text"></li>
+             </div>
+             <div class="text-box">
+                 <button type="" class="btn add-btn">
+                 回数
+                 </button>
+                 <li class="text2 text"></li>
+             </div>
+             <div class="text-box">
+                 <button type="" class="btn add-btn">
+                 今日のあなたは
+                 </button>
+                 <li class="text3 text"></li>
+             </div>
+             <div class="text-box">
+                 <button type="" class="btn add-btn">
+                 メンバで誰のを練習する？
+                 </button>
+                 <li class="text4 text"></li>
+             </div>
+             <div class="text-box">
+                 <button type="" class="btn add-btn">
+                 意識するとこと？
+                 </button>
+                 <li class="text5 text"></li>
+             </div>
+             <div class="text-box">
+                 <button type="" class="btn add-btn">
+                 今日の名言
+                 </button>
+                 <li class="text6 text"></li>
+             </div>
+              
+         </section>
+         <section class="reset-sec clearfix">
+        <div class="text-box">
+            <button type="" class="delete-btn1">
+                reset
+            </button>
+            <ul>
+                <li class="text"></li>
+            </ul>
+        </div>
+        <div class="text-box">
+            <button type="" class="delete-btn2">
+                reset
+            </button>
+            <ul>
+                <li class="text"></li>
+            </ul>
+        </div>
+    </section>
+
+         </div>
+      <!-- <div class="check"></div> -->
+
+
+    <div id="third">
+      <!-- コンテンツ -->
+       <h1>YOUTUBE動画</h1><br>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/hP2_TMXFK2c" frameborder="0" allowfullscreen></iframe>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/3qwJCcDnVdw" frameborder="0" allowfullscreen></iframe>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/_dizgcnl3Vs" frameborder="0" allowfullscreen></iframe>
+      <!-- <div class="check"></div> -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <%= javascript_include_tag 'scripts/jquery.parallax-1.1.3.js' ,'data-turbolinks-track': 'reload'%>
+    <%= javascript_include_tag 'scripts/jquery.localscroll-1.2.7-min.js' ,'data-turbolinks-track': 'reload'%>
+    <%= javascript_include_tag 'scripts/jquery.scrollTo-1.4.2-min.js' ,'data-turbolinks-track': 'reload'%>
+    <%= javascript_include_tag 'script.js' ,'data-turbolinks-track': 'reload'%>
+    <%= javascript_include_tag 'today.js' ,'data-turbolinks-track': 'reload'%>
   </body>
 </html>
