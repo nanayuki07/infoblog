@@ -23,6 +23,19 @@ def show
 end
 
 def top
-  
 end
+
+#page.htmlっていうページへのリンク先を作りたい場合
+def page
+  render :layout => false
+end
+
+def page2
+  render :layout => false
+end
+
+def song
+  render :layout => false
+end
+
 end

@@ -6,5 +6,8 @@ Rails.application.routes.draw do
 	root 'posts#index'
 	get '/posts/:id' => 'posts#show', as: 'post'
 	get '/post/top' => 'posts#top'
+
+	##page.htmlをリンク先に指定したい場合
+	get "/post/page" => "posts#page"
 end
 
