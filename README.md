@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+git add .
+git commit -m ""
+git push origin master
+git push heroku master
