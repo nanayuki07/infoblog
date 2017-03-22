@@ -58,4 +58,9 @@ def fuku
   render :layout => false
 end
 
+def nana
+  render :layout => false
+end
+
+
 end

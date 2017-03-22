@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 	get "/post/fuku" => "posts#fuku"
 	get "/post/song" => "posts#song"
 	get "/post/history" => "posts#history"
-	
+	get "/post/nana" => "posts#nana"
 
 end
 

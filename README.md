@@ -24,6 +24,6 @@ Things you may want to cover:
 * ...
 
 git add .
-git commit -m ""
+git commit -m ""  ←この中になんでもいいからメッセージをうつ　aでもいい
 git push origin master
 git push heroku master
