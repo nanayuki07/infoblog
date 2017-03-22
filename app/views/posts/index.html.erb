@@ -3,3 +3,6 @@
   <!-- <p>タイトル</p> -->
   <span><%= link_to post.title, "/posts/#{post.id}" %></span><br>
 <% end %>
+<% if !current_user.blank? %>
+	<%= link_to "新規投稿",posts_new_path %>
+<% end %>

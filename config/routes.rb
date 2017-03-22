@@ -9,5 +9,14 @@ Rails.application.routes.draw do
 
 	##page.htmlをリンク先に指定したい場合
 	get "/post/page" => "posts#page"
+	get "/post/omichi" => "posts#omichi"
+	get "/post/taiki" => "posts#taiki"
+	get "/post/taihei" => "posts#taihei"
+	get "/post/hikaru" => "posts#hikaru"
+	get "/post/fuku" => "posts#fuku"
+	get "/post/song" => "posts#song"
+	get "/post/history" => "posts#history"
+	
+
 end
 

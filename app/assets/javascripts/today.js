@@ -90,40 +90,40 @@
 // });
 
 
-$('.add-btn').click(function(){
+$('.add-btn2').click(function(){
     var words = ["ステップのレベルが上がった⭐︎","good","絶対にできるよ！","元気と勇気⭐︎","頑張っているの知ってるよ⭐︎"]
     var word = words[Math.floor(Math.random() * words.length)]
     $(this).next('.text').text(word);
 });
 
-$('.add-btn').click(function(){
+$('.add-btn1').click(function(){
     var menues = ["腹筋","背筋","スクワット","腕立て","パドブレ"]
     var menu = menues[Math.floor(Math.random() * menues.length)]
-    $(this).next('.text').text(word);
+    $(this).next('.text').text(menu);
 });
 
-$('.add-btn').click(function(){
+$('.add-btn4').click(function(){
     var menbers = ["TAIKI","HIKARU","OMICHI","TAIHEI",""]
     var menber = menbers[Math.floor(Math.random() * menbers.length)]
-    $(this).next('.text').text(word);
+    $(this).next('.text').text(menber);
 });
 
-$('.add-btn').click(function(){
+$('.add-btn5').click(function(){
     var kibuns = ["ふわっと","かっこよく","かわいく","るんるんで","不思議っぽく"]
     var kibun = kibuns[Math.floor(Math.random() * kibuns.length)]
-    $(this).next('.text').text(word);
+    $(this).next('.text').text(kibun);
 });
 
-$('.add-btn').click(function(){
+$('.add-btn3').click(function(){
     var kaisuus = ["１０回","２０回","３０回","７０回","５回"]
     var kaisuu = kaisuus[Math.floor(Math.random() * kaisuus.length)]
-    $(this).next('.text').text(word);
+    $(this).next('.text').text(kaisuu);
 });
 
-$('.add-btn').click(function(){
+$('.add-btn6').click(function(){
     var meigens = ["自分の足を信じてBY　おみち","悩んでる時間あるなら練習しろと思うBY　たいき","特殊な訓練を受けてるからBY　ひかる","境目がわからないところがポイントだから　BYだいへい","ダンスを習うことを選んだ人にダンスが出来ない人はいないよBY　たいき"]
     var meigen = meigens[Math.floor(Math.random() * meigens.length)]
-    $(this).next('.text').text(word);
+    $(this).next('.text').text(meigen);
 });
 
 $('.delete-btn1').click(function(){

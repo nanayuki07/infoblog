@@ -9,15 +9,7 @@
   </head>
 
   <body>
-   <% if user_signed_in? %>
-      Logged in as <%= current_user.email %>
-      <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "loginlink" %>
-    <% else %>
-      <%= link_to "新規登録", new_user_registration_path,class: "loginlink" %> |
-      <%= link_to "ログイン", new_user_session_path, class: "loginlink" %>
-    <% end %>
     
-
     <div id="intro">
   <!-- コンテンツ -->
       <div class="check">
@@ -25,8 +17,17 @@
         <p><h1>TERM-INAL</h1> </p>
 
 
-        <p><%= link_to "TAIKI",post_page_path %> /<a herf=""> OMICHI </a>/<a hrerf="">TAIHEI </a>/<a herf="">HIKARU</a>/<a herf="">ヒストリー</a>/<a herf="">レッスン曲</a>  /<a herf="">服装</a>
+        <p> <%= link_to "TAIKI","/post/taiki" %> /<%= link_to "OMICHI",post_omichi_path %>/<%= link_to "TAIHEI","/post/taihei" %> /<%= link_to "HIKARU","/post/hikaru" %> /<%= link_to "ヒストリー","/post/history" %> /<%= link_to "レッスン曲","/post/song" %> /<%= link_to "服装","/post/fuku" %> 
         </p>
+
+        <% if user_signed_in? %>
+          Logged in as <%= current_user.email %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "loginlink" %>
+        <% else %>
+          <%= link_to "メンバー専用", new_user_registration_path,class: "loginlink" %> |
+          <%= link_to "ログイン", new_user_session_path, class: "loginlink" %>
+        <% end %>
+
       </div>
       <div class="koushin">
         <h1>出演イベント他</h1>
@@ -41,37 +42,37 @@
       <!-- コンテンツ -->
        <section class="clearfix btn-sec">
              <div class="text-box">
-                 <button type="" class="btn add-btn">
+                 <button type="" class="btn add-btn1">
                  トレーニングメニュー
                  </button>
                  <li class="text1 text"></li>
              </div>
              <div class="text-box">
-                 <button type="" class="btn add-btn">
-                 回数
+              <button type="" class="btn add-btn2">
+                 今日のあなたは
                  </button>
                  <li class="text2 text"></li>
              </div>
              <div class="text-box">
-                 <button type="" class="btn add-btn">
-                 今日のあなたは
+                 <button type="" class="btn add-btn3">
+                 回数
                  </button>
                  <li class="text3 text"></li>
              </div>
              <div class="text-box">
-                 <button type="" class="btn add-btn">
-                 メンバで誰のを練習する？
+                 <button type="" class="btn add-btn4">
+                 メンバーの誰にする？
                  </button>
                  <li class="text4 text"></li>
              </div>
              <div class="text-box">
-                 <button type="" class="btn add-btn">
-                 意識するとこと？
+                 <button type="" class="btn add-btn5">
+                 意識するところ？
                  </button>
                  <li class="text5 text"></li>
              </div>
              <div class="text-box">
-                 <button type="" class="btn add-btn">
+                 <button type="" class="btn add-btn6">
                  今日の名言
                  </button>
                  <li class="text6 text"></li>
@@ -104,7 +105,7 @@
     <div id="third">
       <!-- コンテンツ -->
        <h1>YOUTUBE動画</h1><br>
-      <iframe width="400" height="300" src="https://www.youtube.com/embed/hP2_TMXFK2c" frameborder="0" allowfullscreen></iframe>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/3hUpXwoA_Ls" frameborder="0" allowfullscreen></iframe>
       <iframe width="400" height="300" src="https://www.youtube.com/embed/3qwJCcDnVdw" frameborder="0" allowfullscreen></iframe>
       <iframe width="400" height="300" src="https://www.youtube.com/embed/_dizgcnl3Vs" frameborder="0" allowfullscreen></iframe>
       <!-- <div class="check"></div> -->

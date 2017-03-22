@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   	@post.title = params[:title]
   	@post.body = params[:body]
   	if @post.save
-  	   redirect_to posts_path
+  	   redirect_to root_path
     else 
       render 'new'
     end
@@ -30,11 +30,31 @@ def page
   render :layout => false
 end
 
-def page2
+def omichi
+  render :layout => false
+end
+
+def taiki
+  render :layout => false
+end
+
+def hikaru
+  render :layout => false
+end
+
+def taihei
   render :layout => false
 end
 
 def song
+  render :layout => false
+end
+
+def history
+  render :layout => false
+end
+
+def fuku
   render :layout => false
 end
 
